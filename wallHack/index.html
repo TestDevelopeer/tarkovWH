@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- ==============================================
+    Basic Page Needs
+    =============================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+
+    <title>Leverage - Your next level of website building</title>
+
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+    <!-- ==============================================
+    Vendor Stylesheet
+    =============================================== -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/theme-orange.css">
+
+    <!-- ==============================================
+    Theme Settings
+    =============================================== -->
+    <style>
+        :root {
+            --header-bg-color: #111111;
+            --nav-item-color: #f5f5f5;
+            --top-nav-item-color: #f5f5f5;
+            --hero-bg-color: #111111;
+
+            --section-1-bg-color: #111111;
+
+            --footer-bg-color: #191919;
+        }
+    </style>
+
+</head>
+
+<body class="theme-mode-dark">
+<!-- Multi-Step Form -->
+<section id="contact" class="section-1 form odd">
+    <div class="frameControl"></div>
+    <div class="container">
+        <form action="php/form.php" id="leverage-form" class="multi-step-form">
+            <input type="hidden" name="section" value="leverage_form">
+
+            <input type="hidden" name="reCAPTCHA">
+            <!-- Remove this field if you want to disable recaptcha -->
+
+            <div class="row">
+                <div class="col-12 col-md-6 align-self-start text-center text-md-left">
+
+                    <!-- Success Message -->
+                    <div class="row success message">
+                        <div class="col-12 p-0">
+                            <div class="wait">
+                                <div class="spinner-grow" role="status">
+                                    <span class="sr-only">Loading</span>
+                                </div>
+                                <h3 class="sending">SENDING</h3>
+                            </div>
+                            <div class="done">
+                                <i class="icon bigger icon-check"></i>
+                                <h3>Your message was sent successful. Thanks.</h3>
+                                <a href="" class="btn mx-auto primary-button">
+                                    <i class="icon-refresh"></i>
+                                    REFRESH
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Message -->
+                    <div class="row intro form-content">
+                        <div class="col-12 p-0">
+
+                            <!-- Step Title -->
+                            <div class="step-title">
+                                <h2 class="featured alt" id="username">Tarkov WH</h2>
+                                <p><span id="licInfo">Выполните 1 и 2 шаг, чтобы получить доступ!</span> <span id="endDate" style="color: yellow"></span></p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Steps Group -->
+                    <div class="row text-center form-content">
+                        <div class="col-12 p-0">
+                            <ul class="progressbar">
+                                <li>Путь к игре</li>
+                                <li>Лицензионный ключ</li>
+                                <li>Управление</li>
+                            </ul>
+
+                            <fieldset class="step-group">
+                                <div class="row">
+                                    <div class="col-12 input-group p-0">
+                                        <input type="text" name="pathgame" data-minlength="3" class="form-control field-name pathGame" placeholder="Укажите полный путь папке с игрой">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 input-group p-0">
+                                    <a class="step-next btn primary-button setPathGame">Далее<i class="icon-arrow-right-circle left"></i></a>
+                                </div>
+                            </fieldset>
+
+                            <!-- Group 1 -->
+                            <fieldset class="step-group">
+                                <div class="row">
+                                    <div class="col-12 input-group p-0">
+                                        <input type="text" name="lickey" data-minlength="16" class="form-control field-name licKey" placeholder="Введите ваш лицензионный ключ">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 input-group p-0">
+                                    <a class="step-next btn primary-button checkUser">Далее<i class="icon-arrow-right-circle left"></i></a>
+                                </div>
+                            </fieldset>
+
+                            <!-- Group 2 -->
+                            <fieldset class="step-group">
+                                <div class="row">
+                                <div class="col-6 p-0 d-flex justify-content-between justify-content-md-start">
+                                    <a class="btn primary-button setCheat">Запустить<i class="icon-arrow-right-circle left"></i></a>
+                                </div>
+                                <div class="col-6 p-0 d-flex justify-content-between justify-content-md-start">
+                                    <a class="btn primary-button backUpFiles">Остановить<i class="icon-arrow-right-circle left"></i></a>
+                                </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-images col-12 col-md-6 pl-md-5 d-none d-md-block">
+
+                    <!-- Step 1 -->
+                    <div class="gallery">
+                        <video height="550" width="600"  playsinline muted autoplay loop>
+                            <source src="assets/images/gameplay.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+                        </video>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="notification">
+
+    </div>
+</section>
+
+<!-- ==============================================
+Vendor Scripts
+=============================================== -->
+<script src="assets/js/vendor/jquery.min.js"></script>
+<script src="assets/js/vendor/jquery.easing.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/vh.js"></script>
+<!-- #endregion Global ========================= -->
+<script>
+    require('./render.js');
+</script>
+</body>
+</html>

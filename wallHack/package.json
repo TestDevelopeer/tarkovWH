@@ -1,0 +1,40 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=dev&& electron .",
+    "dist": "electron-builder"
+  },
+  "author": "testdeveloper",
+  "license": "ISC",
+  "build": {
+    "appId": "com.tarkovwh.app",
+    "productName": "TarkovWH",
+    "copyright": "Copyright © 2021 TestDeveloper",
+    "target": "NSIS",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "deleteAppDataOnUninstall": true
+    },
+    "win": {
+      "icon": "./icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "cross-fetch": "^3.1.4",
+    "electron-store": "^8.0.0",
+    "express": "^4.17.1",
+    "node-machine-id": "^1.1.12",
+    "remote": "^0.2.6",
+    "request": "^2.88.2"
+  }
+}
